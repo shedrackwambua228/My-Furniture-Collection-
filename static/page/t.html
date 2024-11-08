@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NickHub | Premium Furniture</title>
+    <link rel="stylesheet" href="?serve=css/base.css">
+    <link rel="icon" type="image/jpg" href="?serve=img/logo.jpg">
+</head>
+
+<body>
+    <main>
+        <!-- Header Section -->
+        <header>
+            <a href="/">
+                <img src="?serve=img/logo.jpg" alt="NickHub Logo">
+            </a>
+            <h1>NickHub Furniture</h1>
+            <h4>Your Trusted Source for Premium Furnishings</h4>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Transform Your Space with Quality Furniture</h2>
+                <p>Explore our collection of modern and classic furniture to fit your unique style.</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about">
+            <h2>About NickHub Furniture</h2>
+            <p>At NickHub, we specialize in premium, handcrafted furniture designed to last a lifetime. Our pieces are made
+                from the finest materials and crafted with care to ensure comfort, durability, and timeless appeal. Whether
+                you're looking to furnish your living room, bedroom, or dining area, NickHub has the perfect piece for every
+                corner of your home.</p>
+        </section>
+
+        <!-- Products Gallery Section -->
+        <section id="products" class="dash-content">
+            <h2>Our Collection</h2>
+            <div class="gallery">
+                <!-- Product 1 -->
+                <div class="dash-item">
+                    <img src="?serve=img/sofa.jpg" alt="Luxury Sofa">
+                    <h3>Luxury Sofa</h3>
+                    <p class="description">A modern, stylish sofa designed for comfort and elegance in any living room.</p>
+                    <p class="price">$799</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="dash-item">
+                    <img src="?serve=img/dining-table.jpg" alt="Wooden Dining Table">
+                    <h3>Wooden Dining Table</h3>
+                    <p class="description">Handcrafted wooden dining table, perfect for gatherings and family meals.</p>
+                    <p class="price">$1,299</p>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="dash-item">
+                    <img src="?serve=img/bed.jpg" alt="Comfortable Bed">
+                    <h3>Comfortable Bed</h3>
+                    <p class="description">Experience ultimate relaxation with our premium, comfortable bed.</p>
+                    <p class="price">$1,499</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+    <script defer type="module" src="?serve=js/base.js"></script>
+</body>
+
+</html>

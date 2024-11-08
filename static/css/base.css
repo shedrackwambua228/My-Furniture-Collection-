@@ -1,0 +1,193 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    --base_text_color: #AEABAF;
+    --border_color: #4F7E78;
+    --base_bg: #121212;
+}
+
+body {
+    line-height: 1.6;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #121212;
+    color: var(--base_text_color);
+    max-width: 1980px;
+    width: 100%;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 3px 2px;
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: var(--base_text_color);
+    margin-right: 10px;
+}
+
+header h4 {
+    font-size: 1em;
+    color: #4F7E78;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('?serve=img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* About Us Section */
+.about {
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+    color: var(--base_text_color);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Products Gallery */
+.dash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.dash-item {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dash-item:hover {
+    transform: scale(1.05);
+}
+
+.dash-item img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dash-item h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: var(--base_text_color);
+}
+
+.dash-item .description {
+    font-size: 0.9em;
+    color: #B1B1B1;
+    margin: 10px 0;
+}
+
+.dash-item .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4F7E78;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    color: var(--base_text_color);
+    width: 100%;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--border_color);
+}
+
+.contact button[type="submit"] {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
